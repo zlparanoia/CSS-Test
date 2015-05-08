@@ -1,0 +1,138 @@
+// 1.三角形的实现 //
+
+<style>
+.single {
+    border-top: 6px solid #fff;
+    border-left: 6px solid red;
+    border-bottom: 6px solid #fff;
+    width: 0;
+    height: 0;
+}
+</style>
+
+<div class="single">
+ 
+</div>
+
+// 2.div水平垂直居中方法 //
+
+<style>
+.test {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 300px;
+height: 300px;
+margin: -150px 0 0 -150px;
+}
+</style>
+
+<div class="test">
+
+</div>
+
+// 3.两列布局、三列布局实现 //
+<style>
+.wrap_one {
+     position: relative;
+}
+
+.one_left {
+     width: 200px;
+     height: 100px;
+     position: absolute;
+     background-color: #FF0000;
+}
+
+.one_right {
+     height: 100px;
+     background-color: #0000FF;
+}
+
+.two_left {
+     width: 200px;
+     height: 100px;
+     float: left;
+     background-color: #FF0000;
+}
+
+.two_right {
+     height: 100px;
+     background-color: #0000FF;
+}
+.wrap_three {
+     width: 100%;
+     float: left;
+}
+
+.three_left {
+     width: 200px;
+     height: 100px;
+     float: left;
+     background-color: #F1419D;
+}
+
+.three_mid {
+     height: 100px;
+     margin: 0 200px;
+     background-color: #E3EE11;
+}
+
+.three_right {
+     width: 200px;
+     height: 100px;
+     float: right;
+     background-color: #A9FF53;
+}
+
+.wrap_four {
+     position: relative;
+}
+
+.four_left {
+     width: 200px;
+     height: 100px;
+     background-color: #EB52CC;
+     position: absolute;
+}
+
+.four_mid {
+     height: 100px;
+     margin: 0 200px;
+     background-color: #FFFF3E;
+}
+
+.four_right {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 200px;
+     height: 100px;
+     background-color: #9EFF3E;
+}
+</style>
+
+<h1>两列布局</h1>
+     <h3>方法一</h3>
+     <div class="wrap_one">
+          <div class="one_left"></div>
+          <div class="one_right"></div>
+     </div>
+     <h3>方法二</h3>
+     <div class="wrap_two">
+          <div class="two_left"></div>
+          <div class="two_right"></div>
+     </div>
+     <h1>三列布局</h1>
+     <h3>方法一</h3>
+     <div class="wrap_three">
+     <div class="three_left"></div>
+     <div class="three_right"></div>      // 向右浮动后到最右边 中间还是在中间
+     <div class="three_mid"></div>
+     </div>
+     <h3>方法二</h3>
+     <div class="wrap_four">
+          <div class="four_left"></div>
+          <div class="four_mid"></div>
+          <div class="four_right"></div>
+     </div>
